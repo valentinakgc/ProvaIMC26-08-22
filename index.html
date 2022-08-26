@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  <script>
+    var respostas = [];
+  </script>
+
+<header>
+    <h1>Índice de Massa Corporal</h1>
+</header>
+
+  <div class="container">
+        <form onsubmit="CalcularIMC(event)" >
+          <div class="form-group">
+            <label for="peso">Peso (Kg)</label>
+            <input type="number" class="form-control" id="peso" name="peso" placeholder="Peso">
+          </div>
+          <div class="form-group">
+            <label for="altura">Altura (cm)</label>
+            <input type="number" class="form-control" id="altura" name="altura" placeholder="Altura">
+          </div>
+          <div class="botao">
+            <button onclick="limparCampos(event)" class="btnL">Limpar</button>
+            <button onclick="CalcularIMC(event)" class="btnC">Calcular</button>
+          </div>
+        </form>
+
+      <div class="resultado" id="imc"></div>
+
+
+      <footer>
+        <ul>
+            Valentina Kroth Gil Cardoso 2°A
+        </ul>
+        <ul>
+            SESI SENAI
+        </ul>
+    </footer>
+ 
+
+  <script src="./JS/script.js"></script>
+
+</body>
+</html>
